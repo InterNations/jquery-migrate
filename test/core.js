@@ -124,15 +124,6 @@ test( "jQuery.parseJSON() falsy values", function() {
 	});
 });
 
-test( "jQuery.browser", function() {
-	expect( 3 );
-
-	( jQuery._definePropertyBroken ? expectNoWarning : expectWarning )( "browser", function() {
-		ok( jQuery.browser, "jQuery.browser present" );
-		ok( jQuery.browser.version, "have a browser version" );
-	});
-});
-
 test( "jQuery.boxModel and jQuery.support.boxModel", function() {
 	expect( 3 );
 
